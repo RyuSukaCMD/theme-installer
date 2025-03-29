@@ -46,6 +46,7 @@ apt-get install -y nodejs
 npm i -g yarn
 cd /var/www/pterodactyl
 yarn
+cd 
 apt install -y zip unzip git curl wget
   if [ $? -eq 0 ]; then
     echo -e "                                                       "
