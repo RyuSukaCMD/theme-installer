@@ -2,7 +2,7 @@
 
 
 
-## Untuk menginstall tem pterodactyl dengan mudah
+## Untuk menginstall tema pterodactyl dengan mudah
 
 ## Command Install :
 
@@ -15,7 +15,7 @@ bash <(curl -s https://raw.githubusercontent.com/RyuSukaCmd/theme-installer/main
 - Install Tema Stellar
 - Install Tema Billing
 - Install Tema Enigma
-- Uninstall Tema
+- Dan banyak lagi!
 
  (Kode Token : ryutheme)
 
@@ -31,6 +31,7 @@ bash <(curl -s https://raw.githubusercontent.com/RyuSukaCmd/theme-installer/main
 
 _\* di atas adalah os yang saya test, selebihnya bisa di test sendiri._
 
+_\* Masih ada error di beberapa tema tapi hanya sedikit 🔥._
 ## Credits 
-- Recode By [ Skyzoe ](https://github.com/RyuSukaCmd)
+- Recode By [ Ryuu ](https://github.com/RyuSukaCmd)
 - Created by [ FOXSTORE ](https://github.com/Foxstoree)
