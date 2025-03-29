@@ -139,6 +139,8 @@ install_theme() {
         ;;
       9)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/NightAdmin.zip")
+        break
+        ;;
       x)
         return
         ;;
