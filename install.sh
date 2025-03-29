@@ -172,18 +172,6 @@ elif [ "$SELECT_THEME" -eq 2 ]; then
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
-  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  cd /var/www/pterodactyl
-  blueprint -install recolor
-  sudo apt install -y nodejs
-  npm i -g yarn
-  cd /var/www/pterodactyl
-  yarn add react-feather
-  php artisan migrate
-  yarn build:production
-  php artisan view:clear
-  sudo rm /root/recolor
-  sudo rm -rf /root/recolor
 
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
