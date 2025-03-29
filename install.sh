@@ -10,11 +10,11 @@ NC='\033[0m'
 # Display welcome message
 display_welcome() {
   echo -e ""
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+]                PREMIUM THEME             [+]${NC}"
-  echo -e "${BLUE}[+]                  © INSTALLER               [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
+  echo -e "${BLUE}[+] ============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
+  echo -e "${BLUE}[+]                PREMIUM THEME                   [+]${NC}"
+  echo -e "${BLUE}[+]                 © INSTALLER                    [+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "Script ini mengandung beberapa TEMA BAJAKAN tapi aman karena sudah saya ubah dan test sedemikian rupa"
@@ -33,7 +33,7 @@ display_welcome() {
 install_jq() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]      UPDATE & INSTALLING DEPENTION              [+]${NC}"
+  echo -e "${BLUE}[+]         UPDATE & INSTALLING DEPENTION           [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo apt update && sudo apt install -y jq
@@ -50,12 +50,12 @@ apt install -y zip unzip git curl wget
   if [ $? -eq 0 ]; then
     echo -e "                                                       "
     echo -e "${GREEN}[+] =============================================== [+]${NC}"
-    echo -e "${GREEN}[+]      INSTALL JQ DEPENTION ANJAY               [+]${NC}"
+    echo -e "${GREEN}[+]      INSTALL JQ DEPENTION ANJAY                 [+]${NC}"
     echo -e "${GREEN}[+] =============================================== [+]${NC}"
   else
     echo -e "                                                       "
     echo -e "${RED}[+] =============================================== [+]${NC}"
-    echo -e "${RED}[+]    INSTALL DEPENTION GAGAL KASIAN                  [+]${NC}"
+    echo -e "${RED}[+]       INSTALL DEPENTION GAGAL KASIAN            [+]${NC}"
     echo -e "${RED}[+] =============================================== [+]${NC}"
     exit 1
   fi
@@ -171,7 +171,7 @@ elif [ "$SELECT_THEME" -eq 2 ]; then
   echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  sudo cp -rfT /root/recolor/recolor.blueprint /var/www/pterodactyl
+  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
   curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
   cd /var/www/pterodactyl
   blueprint -install recolor
