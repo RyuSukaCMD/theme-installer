@@ -123,7 +123,7 @@ install_theme() {
       5)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/billing.zip")
         break
-        ::
+        ;;
       6)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/stellar.zip")
         ;;
@@ -134,7 +134,6 @@ install_theme() {
       8)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/IceMinecraft.zip")
         break
-        ;; 
         ;;
       9)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/NightAdmin.zip")
