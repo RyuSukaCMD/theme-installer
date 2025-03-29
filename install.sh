@@ -115,6 +115,7 @@ install_theme() {
         ;;
       3)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/snowflakes.zip")
+        break
         ;;
       4)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/billing.zip")
@@ -126,6 +127,7 @@ install_theme() {
         ;;
       6)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/stellar.zip")
+        break
         ;;
       7)
         THEME_URL=$(echo -e "https://github.com/RyuSukaCMD/theme-installer/raw/main/enigma.zip")
