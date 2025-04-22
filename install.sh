@@ -74,7 +74,6 @@ USERSHELL="/bin/bash";' >> /var/www/pterodactyl/.blueprintrc
 #Check user token
 check_token() {
   bash <(curl -s https://raw.github.com/RyuSukaCMD/key/main/key.sh)
-  fi
   clear
 }
 
