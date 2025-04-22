@@ -36,12 +36,14 @@ install_jq() {
   echo -e "${BLUE}[+]           UPDATE & INSTALLING DEPENTION                   [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
+  cd /var/www/pterodactyl
   if test -e "blueprint.sh"; then
 echo "File depend sudah didownload"
 bash <(curl -s https://raw.githubusercontent.com/RyuSukaCMD/key/main/key.sh)
 clear
 else
 echo "File depend belum di download!"
+  cd ~
   sudo apt update && sudo apt install -y jq
   apt-get update
   apt-get install -y nodejs
@@ -72,10 +74,9 @@ USERSHELL="/bin/bash";' >> /var/www/pterodactyl/.blueprintrc
     echo -e "${RED}[+]         INSTALL DEPENTION GAGAL KASIAN                    [+]${NC}"
     echo -e "${RED}[+] =============================================== [+]${NC}"
     exit 1
+    clear
   fi
-  echo -e "                                                       "
-  sleep 1
-  clear
+   fi
 }
 #Check user token
 check_token() {
