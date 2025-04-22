@@ -36,6 +36,12 @@ install_jq() {
   echo -e "${BLUE}[+]           UPDATE & INSTALLING DEPENTION                   [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
+  if test -e "blueprint.sh"; then
+echo "File depend sudah didownload"
+bash <(curl -s https://raw.githubusercontent.com/RyuSukaCMD/key/main/key.sh)
+clear
+else
+echo "File depend belum di download!"
   sudo apt update && sudo apt install -y jq
   apt-get update
   apt-get install -y nodejs
